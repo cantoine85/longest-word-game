@@ -1,0 +1,7 @@
+<h1>Bienvenue au jeu des chiffres et des lettres</h1>
+<p>Votre grille : <%= @grid %></p>
+<form action="/score">
+  <input type="text" name="attempt" placeholder="Guess the longest word">
+  <input type="hidden" name="grid" value="<%= @grid %>">
+  <input type="submit">
+</form>
